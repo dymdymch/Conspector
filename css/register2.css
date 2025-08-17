@@ -1,0 +1,169 @@
+/* Контейнер форми */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* Заголовок */
+.form-title {
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Опції */
+.form-option {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* Приховуємо стандартний чекбокс */
+.form-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+body.light-theme .form-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+body.dark-theme .form-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #E6EDF3;
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Стиль коли обрано */
+.form-checkbox:checked {
+  background-color: transparent;
+}
+
+.form-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+body.light-theme .form-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+body.dark-theme .form-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: solid #E6EDF3;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Кнопка */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+    background-color: #3E5C76;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+body.light-theme .submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+    background-color: #3E5C76;
+
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+body.dark-theme .submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+    background-color: #2B2F36;
+
+  color: #E6EDF3;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.submit-btn.active {
+  background-color: #3E5C76;
+  color: #fff;
+}
+
+body.light-theme .submit-btn.active {
+  background-color: #3E5C76;
+  color: #fff;
+}
+
+body.dark-theme .submit-btn.active{
+    background-color: #2B2F36;
+    color: E6EDF3;
+}
+
+.disabled-link {
+  pointer-events: none;
+  opacity: 0.5;
+}

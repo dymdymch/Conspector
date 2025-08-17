@@ -1,0 +1,167 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #E9E2CF;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Контейнер форми */
+.register-container {
+  background: transparent;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+/* Заголовок */
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0F1A2A;
+  margin-bottom: 20px;
+}
+
+/* Підписи */
+label,
+.lable-names {
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: var(--main-title-font-family);
+}
+
+body.light-theme .lable-names {
+  color: rgba(13, 19, 33, 1);
+}
+
+body.dark-theme .lable-names {
+  color: rgba(230, 237, 243, 1);
+}
+
+/* Інпут поля */
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+body.light-theme input,
+body:not(.dark-theme) input {
+  border: 2px solid rgba(13, 19, 33, 1);
+  background-color: rgba(248, 243, 23 ,0);
+}
+
+body.dark-theme input {
+  border: 2px solid rgba(230, 237, 243, 0);
+  background-color: transparent;
+}
+
+/* Кнопка */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3E5C76;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-family: var(--main-title-font-family);
+}
+
+.submit-btn:hover {
+  background-color: #2f4657;
+}
+
+.submit-btn:disabled {
+  background-color: rgba(62, 92, 118, 0.5);
+  cursor: not-allowed;
+}
+
+/* Помилки */
+.error-msg {
+  display: block;
+  min-height: 18px; /* фікс для рівного відступу */
+  font-size: 14px;
+  color: red;
+  margin-top: 4px;
+}
+
+/* Хінт під паролем */
+.password-hint {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Обгортка для паролів */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px; /* місце під іконку */
+}
+
+/* Іконка показу пароля */
+.toggle-icon,
+.toggle-icon1 {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-75%);
+  cursor: pointer;
+}
+
+.error-msg {
+  min-height: 18px; /* однакова висота під кожним полем */
+  font-size: 14px;
+  color: red;
+  margin-top: 4px; /* відступ від інпута */
+}
+
+.input-wrapper,
+.password-wrapper {
+  margin-bottom: 12px; /* відступи між блоками */
+}
+
+
+.input-wrapper,
+.password-wrapper {
+  margin-bottom: 4px; /* маленький відступ між полем і помилкою */
+}
+
+.error-msg,
+.password-hint {
+  min-height: 18px; /* резерв місця під текст */
+  font-size: 14px;
+  margin: 0 0 20px 0; /* відступ знизу однаковий */
+  color: red;
+}
+
+.password-hint {
+  color: #666; /* підказка сірого кольору */
+}
+
+
+body.light-theme input{
+color: black;
+}
+
+body.dark-theme input{
+  color: #E6EDF3;
+}

@@ -1,0 +1,194 @@
+.theme-toggle {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 60px;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  background: linear-gradient(to right, #29caff, #00e0d1);
+  border-radius: 999px;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  transition: background 0.3s ease;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 50%;
+  left: 6px;
+  transition: left 0.4s ease;
+  z-index: 2;
+}
+
+.icon {
+  flex: 1;
+  z-index: 1;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 38px;
+}
+
+.icon.day {
+  background-image: url('/img/night.png'); /* заміни на свою іконку */
+}
+
+.icon.night {
+  background-image: url('/img/day.png'); /* заміни на свою іконку */
+}
+
+
+input:checked + .slider {
+  background: linear-gradient(to right, #1a2a6c, #1e3c72, #2a5298);
+}
+
+input:checked + .slider .circle {
+  left: calc(100% - 54px);
+}
+
+
+.theme-toggle{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+p{
+  margin-bottom: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.settings-form {
+  margin-top: 20px;
+}
+
+.input-group {
+ 
+  /* align-items: center; */
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  /* flex: 0 0 80px; */
+  display: block;
+  font-weight: bold;
+  margin-right: auto;
+  margin-bottom: 8px;
+}
+
+.input-group .input {
+  /* flex: 1; */
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+body.light-theme .input-group .input {
+  /* flex: 1; */
+  color: black;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+body.dark-theme .input-group .input {
+  /* flex: 1; */
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.check-btn {
+  background-color: #3E5C76;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+body.light-theme .check-btn {
+  background-color: #3E5C76;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+body.dark-theme .check-btn {
+  background-color: #2B2F36;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.change-password-btn {
+  font-family: var(--main-title-font-family);
+  font-weight: 600;
+  font-size: 17px;
+  
+  width: 100%;
+  padding: 10px;
+  background-color: #3E5C76;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body.light-theme .change-password-btn {
+  font-family: var(--main-title-font-family);
+  font-weight: 600;
+  font-size: 17px;
+  
+  width: 100%;
+  padding: 10px;
+  background-color: #3E5C76;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+body.dark-theme .change-password-btn {
+  font-family: var(--main-title-font-family);
+  font-weight: 600;
+  
+  width: 100%;
+  padding: 10px;
+  background-color: #2B2F36;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+label{
+  font-family: var(--main-title-font-family);
+}

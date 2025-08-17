@@ -1,0 +1,35 @@
+:root {
+    --FHGO-font-family: "Inter", Helvetica;
+    --FHGO-font-weight: 400;
+    --FHGO-font-size: 12px;
+    --FHGO-letter-spacing: 0px;
+    --FHGO-line-height: normal;
+    --FHGO-font-style: normal;
+    --main-title-font-family: "Montserrat Alternates", Helvetica;
+    --main-title-font-weight: 800;
+    --main-title-font-size: 20px;
+    --main-title-letter-spacing: 0px;
+    --main-title-line-height: normal;
+    --main-title-font-style: normal;
+    --text-font-family: "Montserrat Alternates", Helvetica;
+    --text-font-weight: 600;
+    --text-font-size: 16px;
+    --text-letter-spacing: 0px;
+    --text-line-height: normal;
+    --text-font-style: normal;
+    --topic-text-font-family: "Montserrat Alternates", Helvetica;
+    --topic-text-font-weight: 600;
+    --topic-text-font-size: 12px;
+    --topic-text-letter-spacing: 0px;
+    --topic-text-line-height: normal;
+    --topic-text-font-style: normal;
+    --ospect-text-font-family: "Montserrat Alternates", Helvetica;
+    --ospect-text-font-weight: 600;
+    --ospect-text-font-size: 14px;
+    --ospect-text-letter-spacing: 0px;
+    --ospect-text-line-height: normal;
+    --ospect-text-font-style: normal;
+    --variable-collection-bottom-color: rgba(62, 92, 118, 1);
+    --variable-collection-text-color: rgba(13, 19, 33, 1);
+  }
+  

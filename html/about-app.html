@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/globals.css">
+    <link rel="stylesheet" href="/css/styleguide.css">
+    <link rel="stylesheet" href="/css/about-app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header-container">
+      <a onclick="goBack()"><img src="/img/back.png" data-light="/img/back.png" data-dark="/img/light-back.png" alt="" class="back theme-img"></a>
+      <button id="menu-toggle" class="menu-img" ><img id="list-icon" src="/img/list.svg" data-light="/img/list.svg" data-dark="/img/light-list.svg" alt="" class="theme-img"></button>
+    </header>
+    <main class="container">
+
+      <img src="/img/logo.png" alt="" class="about-us-logo theme-img" data-light="/img/logo.png" data-dark="/img/dark-logo.png">
+
+
+      <ul class="menu-list">
+      <li><a href="/html/class.html" onclick="savePreviousPage()" class="dark"><img src="/img/home.svg" alt="" class="theme-img" data-light="/img/home.svg" data-dark="/img/light-home.svg"><span class="">Головна</span></a></li>
+      <li><a href="/html/profile.html" onclick="savePreviousPage()" class="dark"><img src="/img/user.svg" alt="" class="theme-img" data-light="/img/user.svg" data-dark="/img/light-user.svg"><span>Профіль</span></a></li>
+      <li><a href="/html/about-app.html" onclick="savePreviousPage()" class="dark"><img src="/img/question.svg" alt="" class="theme-img" data-light="/img/question.svg" data-dark="/img/light-question.svg"><span>Про додаток</span></a></li>
+      <li><a href="/html/settings.html" onclick="savePreviousPage()" class="dark"><img src="/img/settings.svg" alt="" class="theme-img" data-light="/img/settings.svg" data-dark="/img/light-settings.svg"><span>Налаштування</span></a></li>
+    </ul>
+      
+    </main>
+    <aside class="sidebar" id="sidebar">
+  <button class="close-btn" id="menu-close">
+    <img src="/img/back.png" alt="" class="theme-img" data-light="/img/back.png" data-dark="/img/light-back.png">
+  </button>
+
+  <ul class="menu-list">
+    <li><a href="/html/class.html" onclick="savePreviousPage()"><img src="/img/home.svg" alt="" class="theme-img" data-light="/img/home.svg" data-dark="/img/light-home.svg"><span>Головна</span></a></li>
+    <li><a href="/html/profile.html" onclick="savePreviousPage()"><img src="/img/user.svg" alt="" class="theme-img" data-light="/img/user.svg" data-dark="/img/light-user.svg"><span>Профіль</span></a></li>
+    <li><a href="/html/about-app.html" onclick="savePreviousPage()"><img src="/img/question.svg" alt="" class="theme-img" data-light="/img/question.svg" data-dark="/img/light-question.svg"><span>Про додаток</span></a></li>
+    <li><a href="/html/settings.html" onclick="savePreviousPage()"><img src="/img/settings.svg" alt="" class="theme-img" data-light="/img/settings.svg" data-dark="/img/light-settings.svg"><span>Налаштування</span></a></li>
+  </ul>
+</aside>  
+
+
+<script src="/js/common.js"></script>
+  </body>
+</html>

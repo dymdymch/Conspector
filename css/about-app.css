@@ -1,0 +1,49 @@
+.about-us-logo{
+    width: 90px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-us-card-set{
+    /* width: 323px; */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.about-app-img{
+    margin-right: auto;
+}
+
+.about-app-img1{
+    margin-right: 13px;
+    width: 56px;
+    height: 60px;
+}
+
+.about-app-txt{
+    font-size: 12px;
+    font-weight: 600;
+
+    width: 249px;
+
+}
+
+body.light-theme .about-app-txt{
+color: rgba(0, 8, 26, 1);
+
+}
+
+body.dark-theme .about-app-txt{
+color: rgba(230, 237, 243, 1);
+
+}
+
+.about-app-card{
+    display: flex;
+}
+
+.about-app-card:not(:last-child){
+    margin-bottom: 60px;
+}

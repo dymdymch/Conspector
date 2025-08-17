@@ -1,0 +1,237 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-container{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 62px;
+  display: flex;
+}
+
+
+
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  display: grid;
+  place-content: center;
+}
+
+.nogrid-container{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body{
+  background-image: url(../img/bg.png);
+  background-position: cover;
+  background-color: rgba(240, 235, 216, 1);
+}
+
+body.day-theme{
+  background-image: url(../img/bg.png);
+
+  font-family: 'Montserrat Alternates';
+
+}
+
+body.dark-theme{
+  background-image: url(../img/bg.png);
+  /* background-size: cover; */
+  /* background-position: center; */
+  background-color: rgba(27, 29, 32, 1);                 /* чорний колір під зображенням */
+  background-blend-mode: multiply;
+}
+
+.page-title{
+  font-family: 'Montserrat Alternates';
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.page-title.dark-theme{
+  font-family: Montserrat Alternates;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 34px;
+  color: #fff;
+}
+
+.img-subj{
+  margin-left: auto;
+}
+
+.subj-card:not(:last-child){
+  margin-bottom: 20px;
+}
+
+body.light-theme{
+  font-family: var(--main-title-font-family);
+  font-weight: 600;
+  font-style: SemiBold;
+  color: rgba(0, 8, 26, 1);
+}
+
+body.dark-theme{
+  font-family: var(--main-title-font-family);
+  font-weight: 600;
+  font-style: SemiBold;
+  color: rgba(230, 237, 243, 1);
+}
+
+/* h1,h2,h3,h4.day-theme{
+  font-family: var(--main-title-font-family);
+  font-weight: 600;
+  font-style: SemiBold;
+  color: rgba(0, 8, 26, 1);
+} */
+
+
+a.light-theme{
+  font-family: var(--main-title-font-family);
+  font-weight: 600;
+  font-style: SemiBold;
+  color: rgba(0, 8, 26, 1);
+}
+
+a.dark-theme{
+  /* font-family: var(--main-title-font-family); */
+  font-weight: 600;
+  font-style: SemiBold;
+  color: #fff;
+}
+
+p{
+  font-family: var(--main-title-font-family);
+  font-weight: 600;
+
+}
+
+li{
+  font-family: var(--main-title-font-family);
+  font-weight: 600;
+}
+
+span{
+  font-family: var(--main-title-font-family);
+  font-weight: 600;
+}
+
+
+.menu-img{
+  margin-left: auto;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.menu-img img{
+  color: #fff;
+}
+
+.close-btn{
+  margin-left: auto;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+background-color: rgba(240, 235, 216, 1);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  background-image: url('/img/bg.png'); /* фоновий візерунок */
+  background-repeat: cover;
+}
+body.light-theme .sidebar{
+    background-color: rgba(240, 235, 216, 1);
+}
+body.dark-theme .sidebar{
+  background-color: rgba(27, 29, 32, 1);
+    background-blend-mode: multiply;
+    color: rgba(230, 237, 243, 1);
+}
+
+
+.sidebar.open {
+  left: 0;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li a{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+body.light-theme .menu-list li a{
+ color: rgba(0, 8, 26, 1);
+}
+
+
+
+.menu-list li a img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.back{
+  cursor: pointer;
+}
+
+.text-center{
+  text-align: center;
+}
+
+body.light-theme .dark{
+  font-family: var(--main-title-font-family);
+  font-weight: 600;
+  font-style: SemiBold;
+  color: rgba(0, 8, 26, 1);
+}
+
+body.dark-theme .dark{
+  font-family: var(--main-title-font-family);
+  font-weight: 600;
+  font-style: SemiBold;
+  color: rgba(230, 237, 243, 1);
+}

@@ -1,0 +1,19 @@
+main{
+    margin-top: 40px;
+}
+
+.theam-content{
+    text-align: center;
+}
+
+.theam-text1{
+    margin-bottom: 40px;
+}
+
+.vlast-title{
+margin-bottom: 20px;
+}
+
+.vlast-item:not(:last-child){
+    margin-bottom: 10px;
+}
