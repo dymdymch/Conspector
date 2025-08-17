@@ -1,0 +1,27 @@
+body{
+    font-family: var(--main-title-font-family);
+}
+
+main{
+    margin-top: 100px;
+}
+
+.error-title {
+      font-family: var(--main-title-font-family);
+    
+      font-size: 5rem;
+      font-weight: 900;
+      letter-spacing: 5px;
+      margin: 0 0 20px;
+      color: #eaeaea;
+    }
+    .error-text {
+            font-family: var(--main-title-font-family);
+
+margin-top: 30px;
+
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.5;
+      text-align: center;
+    }
